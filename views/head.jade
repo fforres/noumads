@@ -1,0 +1,50 @@
+nav(role="navigation" id="main-nav").navbar.navbar-fixed-top.transparent.navbar-default
+	.container
+		.navbar-header
+			button(type="button"   data-toggle="offcanvas" data-target=".navmenu"  data-recalc="true" data-canvas=".canvas").navbar-toggle
+				span(class="sr-only") Toggle navigation
+				span(class="icon-bar")
+				span(class="icon-bar")
+				span(class="icon-bar")
+
+		.collapse.navbar-collapse.navbar-ex1-collapse
+			ul.nav.navbar-nav.socials
+				li
+					a(href='#' data-sn_address='http://www.twitter.com/noumads' data-sn_app='twitter://user?screen_name=noumads').snLink
+						span.fa-stack
+							i.fa.fa-fw.fa-circle-thin.fa-stack-1x.background
+							i.fa.fa-fw.fa-twitter.fa-stack-1x.front
+				li
+					a(href='#' data-sn_address='http://www.facebook.com/noumads' data-sn_app='fb://profile/529480637197227').snLink
+						span.fa-stack
+							i.fa.fa-fw.fa-circle-thin.fa-stack-1x.background
+							i.fa.fa-fw.fa-facebook.fa-stack-1x.front
+				li
+					a(href='#' data-sn_address='http://www.instagram.com/noumads' data-sn_app='instagram://user?username=noumads').snLink
+						span.fa-stack
+							i.fa.fa-fw.fa-circle-thin.fa-stack-1x.background
+							i.fa.fa-fw.fa-instagram.fa-stack-1x.front
+
+			ul.nav.navbar-nav.navbar-right
+				if (isLoggedIn == false)
+					li
+						a(href="#login" data-toggle="modal" data-target="#loginModal").login Ingresa
+				else
+					if locals.rol.isAdmin
+						li
+							a(href="/admins/restaurantes") Administracion
+
+					li
+						a(data-toggle="dropdown" href="#").dropdown-toggle 
+							i.fa.fa-cog Configuracion 
+								span.caret
+						ul.dropdown-menu
+							li
+								a(href="/profile").logout 
+									i.fa.fa-user.fa-fw Perfil
+							li.divider
+							li
+								a(href="/logout").logout Salir
+					
+				
+				

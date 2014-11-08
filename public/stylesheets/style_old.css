@@ -1,0 +1,252 @@
+
+
+body {
+	font-family: sourceSansPro
+}
+.dontshow {
+	opacity: 0
+}
+.show {
+	opacity: 1 !important
+}
+@font-face {
+	font-family: cargoCrate;
+	src: url(/fonts/CARGC___.TTF)
+}
+@font-face {
+	font-family: Avenir;
+	src: url(/fonts/AvenirNext-UltraLight.ttf)
+}
+@font-face {
+	font-family: sourceSansPro;
+	src: url(/fonts/source-sans-pro/SourceSansPro-Semibold.otf)
+}
+.content {
+	padding-top: 50px;
+	height: 100%
+}
+.col-centered {
+	margin: 0 auto;
+	float: none
+}
+.index.fullheight {
+	height: 100%
+}
+.index.fullheight .changingText {
+	margin-right: 10%;
+	margin-left: 10%
+}
+.index.fullheight.noumads {
+}
+.fullheight {
+	height: 90%
+}
+#notcarrousel {
+	position: absolute;
+	height: 100%;
+	width: 100%
+}
+body {
+	background: url(/images/noumads/bg_image.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	background-color: #333;
+	font-family: 'Open Sans', Arial, Helvetica, Sans-Serif
+}
+a:link, a:visited {
+	color: #eee
+}
+.block {
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 370px;
+	padding-left: 12px;
+	padding-right: 12px
+}
+.fullheight.is-Table {
+	display: table
+}
+.fullheight.is-Table .Table-Cell {
+	display: table-cell;
+	vertical-align: middle
+}
+.fullheight.is-Table .TheTableContent {
+	margin-bottom: 20px;
+	text-align: center;
+	cursor: pointer
+}
+.fullheight.is-Table .TheTableContent .titulo {
+	font-family: Avenir;
+	font-size: 66px;
+	color: #CF3636;
+	text-shadow: 2px 2px #333
+}
+.fullheight.is-Table .TheTableContent .subtitulo {
+	font-size: 35px;
+	color: #fff;
+	font-style: italic;
+	margin-top: 0px
+}
+.fullheight.is-Table .TheTableContent .changingText {
+	font-size: 50px;
+	color: #fff;
+	border-top: #fff 2px solid;
+	border-bottom: #fff 2px solid;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+i.continue {
+	font-size: 50px;
+	transition: font-size 0.3s
+}
+i.continue:hover {
+	font-size: 80px;
+	transition: font-size 0.3s;
+	color: #0FB6A1
+}
+#sobreNosotros {
+	padding-bottom: 30px;
+	padding-top: 30px
+}
+
+#WhoYouAre {
+	padding-bottom: 40px
+}
+
+#comoComprar {
+	background: url(/images/noumads/paper-background-light-midquality.jpg);
+	padding-bottom: 30px;
+	padding-top: 30px
+}
+#comoComprar h1.title {
+	text-align: center;
+	font-family: cargoCrate;
+	font-size: 50px;
+	margin-top: 50px;
+	color: #CF3636;
+	margin-bottom: 60px;
+	text-shadow: 2px 2px #666
+}
+#comoComprar .title .small {
+	padding-top: 20px
+}
+#comoComprar h3 {
+	text-align: center;
+	color: #444;
+	text-shadow: 2px 2px #eee
+}
+#comoComprar .choice {
+	z-index: 1
+}
+#comoComprar .choice .text {
+	font-family: Avenir;
+	font-size: 40px;
+	color: #333;
+	cursor: pointer
+}
+
+#comoComprar .choice {
+	text-align: center;
+}
+#comoComprar .choice  i {
+	font-size: 80px;
+	color: #333;
+	cursor: pointer;
+	margin: 0 auto;
+}
+#comoComprar .choice .image img {
+	margin-top: 20px;
+	max-height: 150px;
+	margin: 0 auto;
+	cursor: pointer
+}
+#comoComprar .explanation {
+	font-family: Avenir;
+	font-size: 18px;
+	margin-bottom: 100px;
+	top: 60px;
+	color: #333
+}
+#comoComprar .explanation img {
+	padding-top: 10px;
+	margin: 0 auto;
+	padding-bottom: 10px
+}
+#comoComprar .explanation i {
+	font-size: 40px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: #333;
+	cursor: pointer;
+	margin: 0 auto;
+}
+#loginModal .modal-dialog .modal-header {
+	background: url(/images/noumads/paper-background-light-midquality.jpg)
+}
+#loginModal .modal-dialog .modal-body {
+	background: url(/images/noumads/paper-background-light-midquality.jpg)
+}
+.noumadsLoginPage {
+	background: url(/images/noumads/paper-background-light-midquality.jpg);
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-top: 40px
+}
+.socialLoginIcons i.fa {
+	font-size: 35px;
+	padding-right: 15px
+}
+.socialLoginIcons i.fa.fa-foursquare {
+	color: rgba(249, 72, 119, 0.5);
+	transition: color 0.6s
+}
+.socialLoginIcons i.fa.fa-foursquare:hover {
+	color: rgba(249, 72, 119, 0.9);
+	transition: color 0.6s
+}
+.socialLoginIcons i.fa.fa-twitter {
+	color: rgba(0, 172, 238, 0.5);
+	transition: color 0.6s
+}
+.socialLoginIcons i.fa.fa-twitter:hover {
+	color: rgba(0, 172, 238, 0.9);
+	transition: color 0.6s
+}
+.socialLoginIcons i.fa.fa-facebook {
+	color: rgba(59, 87, 157, 0.5);
+	transition: color 0.6s
+}
+.socialLoginIcons i.fa.fa-facebook:hover {
+	color: rgba(59, 87, 157, 0.9);
+	transition: color 0.6s
+}
+#elEquipo {
+	background: #F3F3F3;
+	padding-bottom: 30px;
+	padding-top: 30px
+}
+#elEquipo h1.title {
+	text-align: center;
+	font-family: cargoCrate;
+	font-size: 50px;
+	margin-top: 50px;
+	color: #CF3636;
+	margin-bottom: 60px;
+	text-shadow: 2px 2px #666
+}
+#elEquipo .title .small {
+	padding-top: 20px
+}
+#elEquipo img {
+	margin: 0 auto
+}
+#elEquipo .team p {
+	padding-top: 30px;
+	font-family: Avenir;
+	font-size: 20px;
+	color: #333
+}

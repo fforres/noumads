@@ -1,0 +1,163 @@
+extends layout
+
+block content
+	include snipets/errors
+	#notcarrousel
+		.row.fullheight.index.noumads#Busqueda
+	
+			.col-xs-6.col-sm-9.col-centered.fullheight.is-Table
+				.Table-Cell
+					.TheTableContent
+						h1.titulo Noumads
+						h2.subtitulo Have Fun!
+						.changingText(data-texts="Let's get Noumads!|Let's Conquer the World!|The New Way of Travel|The biggest Game ever|Your biggest Adventure") Let's get Noumads!
+						i(href="#comoComprar").fa.fa-chevron-circle-down.continue.scroll-link
+
+
+
+		.row#comoComprar
+			.col-xs-12.col-sm-12.text-center
+				h1.title Get Started!
+					.small Tell us who you are
+			.col-xs-12.col-sm-12.text-center#WhoYouAre
+				.col-md-4.col-md-offset-2.col-xs-6.choice(data-choice='noumad')
+						.text Traveler
+						i.fa.fa-fw.fa-plane.animated(href="#WhoYouAre").scroll-link
+						//.image
+							img.animated(src='/images/noumads/travelers.png').img-responsive
+				
+				.col-md-4.col-xs-6.choice(data-choice='host')
+						.text  Host
+						i.fa.fa-fw.fa-home.animated(href="#WhoYouAre").scroll-link
+						//.image
+							img.animated(src='/images/noumads/host.png').img-responsive
+			.col-xs-12.col-sm-12.text-center.explanations
+				.col-md-5.col-centered.text-center.animated.explanation.hidden(data-choice='noumad')
+					p Just as simple as getting your profile and looking for places to book!
+					i.animated.fa.fa-fw.fa-search
+					p Noumads will provide you with places all around the world that are part of the Noumads Community. Read the reviews, look at the pictures and reserve your destination at the best prices.
+					//img.animated(src='/images/noumads/group.png')
+					i.animated.fa.fa-fw.fa-group
+					p Are you in a party? Excellent! you just have to select that option and invite your friend when you start the booking process.
+					//img.animated(src='/images/noumads/walkingwithabag.png')
+					i.animated.fa.fa-fw.fa-suitcase
+					p Are you traveling alone? Superb!
+					p If you want to, you can be a part of the Noumads Club, and contact with people around the globe that are planning trips, and looking for travel companions to make a party.
+					i.animated.fa.fa-fw.fa-globe
+					p Make friends all around the world!
+				.col-md-5.col-centered.text-center.animated.explanation.hidden(data-choice='host')
+					p Looking to make some money with your place?
+					i.animated.fa.fa-fw.fa-line-chart
+					p Whether it is a bed, a room, a house, a condo, your apartment or a hostel, a lodge, etc.
+					p Noumads is your place!
+					i.animated.fa.fa-fw.fa-map-marker
+
+					//img.animated(src='/images/noumads/hotel-bed.png')
+					p Just get your profile done and tell the world about you. Put some information, fees and pictures up, and you are ready to go.
+					p You can also interact with the Noumads Community, tell some stories, share experiences, tips, call people to come to your place, and so on.
+					//img.animated(src='/images/noumads/resort-icon.png')
+					i.animated.fa.fa-fw.fa-globe
+					p With the Noumads platform you will get into the social world. You will generate more movement with easy access and communication with your costumers, expanding your business.
+			.col-xs-12.col-sm-12.text-center
+				i(href="#elEquipo").fa.fa-chevron-circle-down.continue.scroll-link
+
+		.row#elEquipo
+				.col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3.text-center.team
+					h1.title Meet The Team
+						.small "The Noumads"
+				.col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3.text-center.team
+
+					.col-xs-6.col-sm-4.col-md-4.col-lg-4
+						blockquote 
+							img(src='/images/team/felipetorres.jpg').img-responsive.img-circle
+							p.hidden-xs Es genial poder entregar un producto
+								strong  de calidad, 
+								| y que ayude realmente a quien lo use.
+							footer Felipe "Forres" Torres
+								h6 CTO, Developer , UX/UI Designer
+
+					.col-xs-6.col-sm-4.col-md-4.col-lg-4
+						blockquote 
+							img(src='/images/team/diegocortes.jpg').img-responsive.img-circle
+							p.hidden-xs No solo nos encanta lo que hacemos, también nos gusta hacerlo bien.
+							footer Diego "CEO" Cortés
+								h6 CEO, Lead Developer, Creative, UX/UI Designer
+
+
+					.col-xs-6.col-sm-4.col-md-4.col-lg-4
+						blockquote 
+							img(src='/images/team/gonzalotorres.jpg').img-responsive.img-circle
+							p.hidden-xs No solo nos encanta lo que hacemos, también nos gusta hacerlo bien.
+							footer Diego "CEO" Cortés
+								h6 Lead Developer, Creative, UX/UI Designer
+					.col-xs-6.col-sm-4.col-md-3.col-lg-4.visible-xs
+						blockquote 
+							img(src='/images/team/gonzalotorres.jpg').img-responsive.img-circle
+							p.hidden-xs No solo nos encanta lo que hacemos, también nos gusta hacerlo bien.
+							footer Diego "CEO" Cortés
+								h6 Lead Developer, Creative, UX/UI Designer
+				.col-xs-12.col-sm-10.col-sm-offset-1.col-md-10.col-md-offset-1.col-lg-6.col-lg-offset-3.text-center.team
+					.col-xs-6.col-sm-4.col-md-4.col-lg-4
+						blockquote 
+							img(src='/images/team/felipetorres.jpg').img-responsive.img-circle
+							p.hidden-xs Es genial poder entregar un producto
+								strong  de calidad, 
+								| y que ayude realmente a quien lo use.
+							footer Felipe "Forres" Torres
+								h6 CTO, Developer , UX/UI Designer
+					.col-xs-6.col-sm-4.col-md-4.col-lg-4
+						blockquote 
+							img(src='/images/team/diegocortes.jpg').img-responsive.img-circle
+							p.hidden-xs No solo nos encanta lo que hacemos, también nos gusta hacerlo bien.
+							footer Diego "CEO" Cortés
+								h6 CEO, Lead Developer, Creative, UX/UI Designer
+
+
+					.col-xs-6.col-sm-4.col-md-4.col-lg-4.hidden-xs
+						blockquote 
+							img(src='/images/team/gonzalotorres.jpg').img-responsive.img-circle
+							p.hidden-xs No solo nos encanta lo que hacemos, también nos gusta hacerlo bien.
+							footer Diego "CEO" Cortés
+								h6 Lead Developer, Creative, UX/UI Designer
+
+			.col-xs-11.col-sm-12.text-center
+				i(href="#comoComprar").fa.fa-chevron-circle-down.continue.scroll-link
+
+
+
+
+		
+
+
+			
+		//.row#Contactanos
+			.col-xs-11.col-sm-11.col-centered.text-center
+				.col-md-6.col-centered
+					h1.title ¿Tienes alguna idea?
+						.small ¿Consulta? ¿Sugerencia? ¿Reclamo?
+				.col-md-9.col-centered
+					p
+					h3 Quizás sólo quieras conversar un rato, quizás buscas trabajo, o contarnos lo mucho que te gusta Noumads. De cualquier manera:
+				
+				.col-md-6.col-centered
+					h1 Contáctanos! 
+						.small Usamos Twitter, Facebook o Correo
+					h1.text-center.icons 
+						a(href="http://www.twitter.com/cerck")
+							i.fa.fa-twitter.fa-fw 
+						a(href="http://www.facebook.com/fforr.es")
+							i.fa.fa-facebook.fa-fw 
+						a(href="mailto:contacto@Noumads.com?Subject=Tengo una idea!")
+							i.fa.fa-envelope-o.fa-fw 
+
+				
+		.row#footer
+			.col-xs-11.col-sm-11.col-centered.text-right
+				hr
+				.col-md-12.col-centered
+					h5 Designed by 
+						a(href="http://www.twitter.com/fforres") @fforres
+					h5 MIT license 
+
+
+

@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		if title
+			title #{title}
+		else
+			title Noumads - Have Fun!
+		meta(http-equiv='content-type', charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+
+
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css') 
+		link(rel='stylesheet', href='/stylesheets/style.css') 
+		//link(rel='stylesheet', href='/stylesheets/style_old.css') 
+		link(rel='stylesheet', href='/stylesheets/animate.css') 
+		link(rel='stylesheet', href='/plugins/jasny-bootstrap/css/jasny-bootstrap.min.css')
+		link(rel='stylesheet', href='/plugins/jasny-bootstrap/css/navmenu-reveal.css')
+		link(rel='stylesheet', href='/fonts/font-awesome/css/font-awesome.min.css')
+		link(rel='stylesheet', href='/plugins/NotificationStyles/css/ns-default.css')
+		link(rel='stylesheet', href='/plugins/NotificationStyles/css/ns-style-growl.css')
+
+	body
+		include offCanvas
+		.canvas
+			include head
+			div
+				block content
+		include snipets/modal_login
+
+	script(type='text/javascript' src='/javascripts/jquery-2.1.0.min.js')
+	script(type='text/javascript' src='/javascripts/jquery.konami.min.js')
+	script(type="text/javascript" src="/javascripts/bootstrap.js")
+	script(type='text/javascript' src='/javascripts/jquery.easing.js')
+	script(type='text/javascript' src='/plugins/jasny-bootstrap/js/jasny-bootstrap.min.js')
+	script(type='text/javascript' src='/javascripts/TweenMax.min.js')
+	script(type='text/javascript' src='/javascripts/jquery.scrollmagic.js')
+	script(type='text/javascript' src='/javascripts/jquery.scrollmagic.debug.js')
+	script(type='text/javascript' src='/javascripts/script.js')
+	script(type='text/javascript' src='/javascripts/jquery.viewportchecker.js')
+	script(type='text/javascript' src='/plugins/NotificationStyles/js/modernizr.custom.js')
+	script(type='text/javascript' src='/plugins/NotificationStyles/js/notificationFx.js')
+
