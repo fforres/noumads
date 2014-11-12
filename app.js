@@ -44,6 +44,10 @@ app
 		secret: settings.CookieSecret,
 		store: new MongoStore({
 			db: settings.Mongo.Db,
+			host: settings.Mongo.Server,
+			port:settings.Mongo.Port,
+			username: settings.Mongo.User,
+			password: settings.Mongo.Pass,
 			collection: settings.Mongo.SessionCollection
 		})
 	}))
@@ -56,10 +60,10 @@ app
 	.use(function(req, res, next) {
 		roleHelper.setTopBarRol(req, res, next, app);
 	})
+	.use('/', users)
 	.use('/admins/', admin)
 	.use('/api/', api)
 	.use('/tests/', tests)
-	.use('/', users)
 	.use(function(req, res, next) {
 		var err = new Error('Not Found');
 		err.status = 404;

@@ -1,3 +1,12 @@
+
+.vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 body {
 	font-family: sourceSansPro
 }
@@ -43,7 +52,7 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: url(/images/noumads/bg_image.jpg) no-repeat center center fixed;
+	background: url(/images/noumads/bg_image_small.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

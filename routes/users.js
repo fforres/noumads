@@ -41,6 +41,11 @@ router.use(function(req, res, next) {
 	}
 	next();
 });
+router.get('*',function(req,res){
+	res.render('landing',{
+		title: 'Noumads'
+	})
+})
 router.get('/', function(req, res) {
 	var a = users.currentUserRole.isAdmin(req);
 	if (req.query && req.query["srch-term"]) {

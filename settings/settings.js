@@ -3,14 +3,20 @@ var Cookie = {
 }
 var Mongo = {
 	Db: 'noumads',
-	Server: 'localhost',
-	SessionCollection: 'sessions'
+	Server: 'ds053080.mongolab.com',
+	Port:53080,
+	User:"noumads",
+	Pass:"noumads",
+	SessionCollection: 'sessions',
+	Url: "noumads:noumads@ds053080.mongolab.com:53080/noumads"
 }
+//mongodb://user:pass@host:port/database/collection
 var Site = {
 	//siteUrl: 'www.noumads.com',
 	siteUrl: 'localhost:3003',
 	siteProtocol: 'http://'
 }
+
 var socialCallbacks = {
 	foursquare: Site.siteProtocol + Site.siteUrl + '/login/foursquare/callback',
 	twitter: Site.siteProtocol + Site.siteUrl + '/login/twitter/callback',

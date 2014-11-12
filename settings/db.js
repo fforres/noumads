@@ -1,5 +1,7 @@
 var mongojs = require("mongojs");
-var db = mongojs("localhost/noumads");
+var dbConfig = require("./settings");
+console.log(dbConfig.Mongo.Url)
+var db = mongojs(dbConfig.Mongo.Url);
 var rolesArr = [{
 	"nombre": "PublicUser"
 }, {
