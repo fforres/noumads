@@ -60,9 +60,9 @@ app
 	.use(function(req, res, next) {
 		roleHelper.setTopBarRol(req, res, next, app);
 	})
+	.use('/api/', api)
 	.use('/', users)
 	.use('/admins/', admin)
-	.use('/api/', api)
 	.use('/tests/', tests)
 	.use(function(req, res, next) {
 		var err = new Error('Not Found');

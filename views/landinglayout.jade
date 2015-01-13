@@ -1,10 +1,7 @@
 doctype html
 html
 	head
-		if title
-			title #{title}
-		else
-			title Noumads - Have Fun!
+		title Noumads - Have Funs!
 		meta(http-equiv='content-type', charset='UTF-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		meta(http-equiv='X-UA-Compatible' content='IE=edge')
@@ -16,12 +13,13 @@ html
 		link(rel='stylesheet', href='/stylesheets/landing.css') 
 		link(rel='stylesheet', href='/stylesheets/animate.css') 
 		link(rel='stylesheet', href='/fonts/font-awesome/css/font-awesome.min.css')
-
+		link(rel='stylesheet', href='/3rdparty/AmaranJS/css/amaran.min.css')
+		link(rel='stylesheet', href='/3rdparty/AmaranJS/css/animate.min.css')
+		
 	body
-		.canvas
-			div
-				block content
-		include snipets/modal_login
+		block content
 
 	script(type='text/javascript' src='/javascripts/jquery-2.1.0.min.js')
 	script(type="text/javascript" src="/javascripts/bootstrap.js")
+	script(type="text/javascript" src="/javascripts/landing.js")
+	script(type="text/javascript" src="/3rdparty/AmaranJS/js/jquery.amaran.min.js")

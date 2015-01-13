@@ -5,3 +5,11 @@
 .landing{
 	text-align:center;
 }
+
+img.centered{
+    margin:0 auto;
+}
+
+.socialLinks i {
+    font-size: 46px;
+}
