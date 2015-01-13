@@ -4,6 +4,8 @@
 }
 .landing{
 	text-align:center;
+	margin-top:20px;
+	margin-bottom:50px;
 }
 
 img.centered{
@@ -12,4 +14,13 @@ img.centered{
 
 .socialLinks i {
     font-size: 46px;
+}
+
+@media screen and (max-width:767px) {
+    .preinput h2{
+        font-size: 25px;
+    }
+    .maneras h2 {
+        font-size: 24px;
+    }
 }

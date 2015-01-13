@@ -1,4 +1,50 @@
 $(document).on("ready",function(e){
+    
+    resize();
+    $(window).on("resize",function(e){
+        resize();
+    })
+    /*
+    $(".socialLinks a").on("click",function(e){
+        e.preventDefault();
+        var app = $(this).data("app")
+        var link = $(this).attr("href")
+        var url=""
+        switch (app) {
+            case 'facebook':
+                // code
+                url="fb://page/529480637197227"
+                break;
+            case 'twitter':
+                // code
+                url="twitter://user?screen_name=noumads"
+                break;
+            case 'instagram':
+                // code
+                url="instagram://user?username=noumads"
+                break;
+            
+            default:
+                url="#"
+                // code
+        }
+        console.log(url)
+        console.log(link)
+
+        var now = new Date().valueOf();
+        setTimeout(function () {
+            if (new Date().valueOf() - now > 100) return;
+            window.open(app,"'_blank");
+        }, 700);
+        
+        window.open(app,"'_blank");
+        
+
+    });
+    
+    */
+   
+    
     $(".saveMail").on("click",function(e){
         e.preventDefault();
         var elinput = $(this).parents(".form-group").find("input.email")
@@ -49,6 +95,32 @@ $(document).on("ready",function(e){
             outEffect:'slideTop',
             delay:6000
         });
+    }
+    
+    function resize(){
+        console.log("resizing")
+        var mayor = 0
+        var extras = 0;
+        $.each($(".landing"),function(k,v){
+            var paddingBottom = parseInt($(v).css("margin-bottom").substring(0,$(v).css("margin-bottom").length-2))
+            var paddingTop = parseInt($(v).css("margin-top").substring(0,$(v).css("margin-top").length-2))
+            var laAlturaTotal = $(".vertical-align").height() + paddingBottom + paddingTop; 
+            if(laAlturaTotal>mayor){
+                mayor=laAlturaTotal;
+                extras = paddingTop + paddingBottom;
+            }
+        })
+        
+        
+        console.log($("#notcarrousel").height())
+        console.log(mayor+extras)
+        
+        
+        
+        if($("#notcarrousel").height() < mayor+extras){
+            $("#notcarrousel").height(mayor+extras+50)    
+        }
+        
     }
 });
 

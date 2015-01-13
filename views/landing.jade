@@ -2,7 +2,6 @@ extends landinglayout
 
 block content
   div#notcarrousel.row.soon
-    div.background
     div.vertical-align
       div.row.landing.visible-lg
         div.col-lg-12.aviso
@@ -32,11 +31,11 @@ block content
                   a.btn.btn-default.saveMail(type='button') Envía!
             .col-lg-6 
                 div.socialLinks
-                  a.SocialLink.twitter(href='https://twitter.com/noumads')
+                  a.SocialLink.twitter(data-app='twitter', href='https://twitter.com/noumads', target='_blank')
                     i.fa.fa-twitter-square.fa-fw
-                  a.SocialLink.facebook(href='https://www.facebook.com/noumads')
+                  a.SocialLink.facebook(data-app='facebook', href='https://www.facebook.com/noumads', target='_blank')
                     i.fa.fa-facebook-square.fa-fw   
-                  a.SocialLink.instagram(href='http://instagram.com/noumads')
+                  a.SocialLink.instagram(data-app='instagram', href='http://instagram.com/noumads', target='_blank')
                     i.fa.fa-instagram.fa-fw             
       div.row.landing.hidden-lg
         .col-xs-12
@@ -52,18 +51,18 @@ block content
         .col-xs-10.col-xs-offset-1
           hr
         .col-xs-12
-          .col-xs-12
+          .col-xs-12.preinput
             h2 Quieres ser parte de Noumads? Ingresa tu correo aquí
-            .form-group.input-group.input-group-lg.col-xs-12.col-sm-10.col-sm-offset-1
-              input.email.form-control.input-lg(type='email', name='email', placeholder='ejemplo@noumads.com')
+            .form-group.input-group.col-xs-12.col-sm-10.col-sm-offset-1
+              input.email.form-control(type='email', name='email', placeholder='ejemplo@noumads.com')
               span.input-group-btn
                 a.btn.btn-default.saveMail(type='button') Envía!
           .col-xs-12.maneras
             h2 O contáctanos en nuestras redes sociales
             div.socialLinks
-              a.SocialLink.twitter(href='https://twitter.com/noumads')
+              a.SocialLink.twitter(data-app='twitter', href='https://twitter.com/noumads', target='_blank')
                 i.fa.fa-twitter-square.fa-fw
-              a.SocialLink.facebook(href='https://www.facebook.com/noumads')
+              a.SocialLink.facebook(data-app='facebook', href='https://www.facebook.com/noumads', target='_blank')
                 i.fa.fa-facebook-square.fa-fw   
-              a.SocialLink.instagram(href='http://instagram.com/noumads')
+              a.SocialLink.instagram(data-app='instagram', href='http://instagram.com/noumads', target='_blank')
                 i.fa.fa-instagram.fa-fw             
